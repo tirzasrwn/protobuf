@@ -15,8 +15,8 @@ func main() {
 	furina := &models.Person{
 		Id:           1,
 		Name:         "Furina",
-		Region:       "Fontaine",
-		Vision:       "Hydro",
+		Region:       models.Region_Fontaine,
+		Vision:       models.Vision_Hydro,
 		IsArchon:     true,
 		Affiliations: []string{"The Seven", "Opera Epiclese", "Court of Fontaine"},
 	}
@@ -37,7 +37,7 @@ func main() {
 
 	lynette.Id = 2
 	lynette.Name = "Lynette"
-	lynette.Vision = "Anemo"
+	lynette.Vision = models.Vision_Anemo
 	// default value, like false on bool, will not serialize and showing
 	lynette.IsArchon = false
 	lynette.Affiliations = []string{"House of the Hearth", "Hotel Bouffes d'ete"}

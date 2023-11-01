@@ -2,13 +2,16 @@ syntax = "proto3";
 
 package models;
 
+import "region.proto";
+import "vision.proto";
+
 option go_package = "/models";
 
 message Person {
   int32 id = 1;
   string name = 2;
-  string vision = 3;
-  string region = 4;
+  Vision vision = 3;
+  Region region = 4;
   bool is_archon = 5;
   repeated string affiliations = 6;
 }

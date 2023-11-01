@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package models;
+
+option go_package = "/models";
+
+enum Vision {
+  Unknown_Vision = 0;
+  Anemo = 1;
+  Geo = 2;
+  Electro = 3;
+  Dendro = 4;
+  Hydro = 5;
+  Pyro = 6;
+  Cyro = 8;
+}
